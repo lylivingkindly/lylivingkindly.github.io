@@ -25,7 +25,6 @@ body {
   /* Optional: space between the blog posts */
   margin-right: 290px;
   /* Ensures 290px space on the right side */
-  height: 50px;
 }
 
 .blog-post {
@@ -232,12 +231,18 @@ button[type="submit"]:hover {
   pointer-events: none; /* Prevents the icon from interfering with the link */
 }
 
+footer {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+
 #mc_embed_signup {
-  background: #fff;
-  false;
-  clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
   width: 598px;
+  margin-right: 290px;
+  font-family: "Poppins";
+
 }
 
 @media only screen and (max-width: 600px) {
