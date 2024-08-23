@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lylivingkindly</title>
+
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <div id="introduction">
+    <h1>Living kindly, shall WE? :)</h1>
+    <p>Hey, warmly welcome you to my blog!</p>
+    <p><i>What's your pick for today?</i></p>
+  </div>
+  
+
+  <div id="about-me">
+    <h2>Hello, I'm Ly!</h2>
+    <p>This blog is created to cater for my writing and exchanging ideas appetite. This is a space where I share joy
+      living within nature, while being mindful of the interlinkage between myself and the planet surrounding me.</p>
+    <p><i> "In a world where you can be anything, be kind :)"</i></p>
+    <p>If you find it pleasant reading my systemically random thoughts, join my email list, and feel free to reach out
+      to chat!</p>
+    <p>Cheers!</p>
+    <img src="ly.jpg" alt="it's Ly">
+  </div>
+
+  <div id="about-toggle">
+    <span id="toggle-arrow">➔</span> About Me
+  </div>
+
+  <div class="filters">
+    <button class="filter-button" data-filter="all">All</button>
+    <button class="filter-button" data-filter="Food & Agriculture">Food & Agriculture</button>
+    <button class="filter-button" data-filter="Within Nature">Within Nature</button>
+  </div>
+
+  <div class="blog-container">
+    <div class="blog-post" data-category="Food & Agriculture">
+      <img src="dominion.jpg" alt="Dominion">
+      <h2>“Dominion”: Changing your perspective on animal husbandry</h2>
+      <p>What is "Dominion"? And how is it so haunting?</p>
+        <div id="read-more">
+          <a href="blog1_dominion.html">Read More</a>
+        </div>
+    </div>
+
+    <div class="blog-post" data-category="Within Nature">
+      <img src="repovesi_night.jpg" alt="Repovesi night">
+      <h2>A starry night at Repovesi</h2>
+      <p>Shooting for the moon sounds ideal, but have you tried reaching for the stars?</p>
+      <a href="blog2_repovesi night.html">Read More</a>
+    </div>
+  </div>
+
+    <script>
+      document.getElementById('about-toggle').addEventListener('click', function () {
+        const aboutMe = document.getElementById('about-me');
+        aboutMe.classList.toggle('active');
+
+        const aboutToggle = document.getElementById('about-toggle');
+        aboutToggle.classList.toggle('active');
+      });
+      document.querySelectorAll('.filter-button').forEach(button => {
+        button.addEventListener('click', function() {
+          let filterValue = this.getAttribute('data-filter');
+
+          document.querySelectorAll('.blog-post').forEach(post => {
+            if (filterValue === 'all' || post.getAttribute('data-category') === filterValue) {
+              post.style.display = 'block';
+            } else {
+              post.style.display = 'none';
+            }
+          });
+        });
+      });
+    </script>
+
+    
+    
+</body>
+
+</html>
