@@ -4,13 +4,15 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>lylivingkindly</title>
 
   <style>
-    
+
   </style>
 </head>
 
@@ -20,7 +22,7 @@
     <p>Hey, warmly welcome you to my blog!</p>
     <p><i>What's your pick for today?</i></p>
   </div>
-  
+
 
   <div id="about-me">
     <h2>Hello, I'm Ly!</h2>
@@ -48,9 +50,9 @@
       <img src="dominion.jpg" alt="Dominion">
       <h2>“Dominion”: Changing your perspective on animal husbandry</h2>
       <p>What is "Dominion"? And how is it so haunting?</p>
-        <div id="read-more">
-          <a href="blog1_dominion.html">Read More</a>
-        </div>
+      <div id="read-more">
+        <a href="blog1_dominion.html">Read More</a>
+      </div>
     </div>
 
     <div class="blog-post" data-category="Within Nature">
@@ -61,31 +63,31 @@
     </div>
   </div>
 
-    <script>
-      document.getElementById('about-toggle').addEventListener('click', function () {
-        const aboutMe = document.getElementById('about-me');
-        aboutMe.classList.toggle('active');
+  <script>
+    document.getElementById('about-toggle').addEventListener('click', function () {
+      const aboutMe = document.getElementById('about-me');
+      aboutMe.classList.toggle('active');
 
-        const aboutToggle = document.getElementById('about-toggle');
-        aboutToggle.classList.toggle('active');
-      });
-      document.querySelectorAll('.filter-button').forEach(button => {
-        button.addEventListener('click', function() {
-          let filterValue = this.getAttribute('data-filter');
+      const aboutToggle = document.getElementById('about-toggle');
+      aboutToggle.classList.toggle('active');
+    });
+    document.querySelectorAll('.filter-button').forEach(button => {
+      button.addEventListener('click', function () {
+        let filterValue = this.getAttribute('data-filter');
 
-          document.querySelectorAll('.blog-post').forEach(post => {
-            if (filterValue === 'all' || post.getAttribute('data-category') === filterValue) {
-              post.style.display = 'block';
-            } else {
-              post.style.display = 'none';
-            }
-          });
+        document.querySelectorAll('.blog-post').forEach(post => {
+          if (filterValue === 'all' || post.getAttribute('data-category') === filterValue) {
+            post.style.display = 'block';
+          } else {
+            post.style.display = 'none';
+          }
         });
       });
-    </script>
+    });
+  </script>
 
-    
-    
+
+
 </body>
 
 </html>
