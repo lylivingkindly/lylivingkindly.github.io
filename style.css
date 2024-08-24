@@ -100,7 +100,7 @@ body {
 .filters {
   text-align: left;
   margin-bottom: 20px;
-  line-height: 40px;
+  line-height: 45px;
 }
 
 .filter-button {
@@ -295,5 +295,7 @@ footer {
   .blog-post-text img {
     width: 600px;
   }
-
+ #mc_embed_signup {
+    width: 350px;
+ }
 }
