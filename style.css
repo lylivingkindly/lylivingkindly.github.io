@@ -48,7 +48,7 @@ body {
 
 .blog-post p {
   color: #2f503b;
-  line-height:25px;
+  line-height: 25px;
 }
 
 .blog-post a {
@@ -65,7 +65,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   margin: 0 auto;
-  width: 600px;
+  max-width: 600px;
 }
 
 .blog-post-text p {
@@ -73,28 +73,30 @@ body {
   margin-bottom: 30px;
 }
 
-.blog-post-text h1 + p {
+.blog-post-text h1+p {
   margin-top: 40px;
 }
 
-.blog-post-text h2 + p {
+.blog-post-text h2+p {
   margin-top: 10px;
-}
-.blog-post-text img {
-  margin: 0 auto;
-  width: 600px;
-  border-radius: 5px;
 }
 
 .blog-post-text img {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: 5px;
+  margin: 30px auto 20px;
+  height: auto;
 }
+
 .blog-post {
-  display: block; /* Show all by default */
+  display: block;
+  /* Show all by default */
 }
+
 .active-post {
-  display: block; /* Show active posts */
+  display: block;
+  /* Show active posts */
 }
 
 .filters {
@@ -105,7 +107,8 @@ body {
 
 .filter-button {
   background-color: #7acb7c;
-  color: #2f503b; /* White text color */
+  color: #2f503b;
+  /* White text color */
   border: none;
   padding: 10px 20px;
   margin: 0 0px;
@@ -115,8 +118,10 @@ body {
   font-size: 14px;
   font-family: inherit;
   cursor: pointer;
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  border-radius: 5px;
+  /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s;
+  /* Smooth transition for hover effects */
 }
 
 .filter-button:hover {
@@ -158,7 +163,7 @@ body {
   height: auto;
   border-radius: 5px;
   /* Optional: rounds the corners of the image */
-  
+
 }
 
 #about-toggle {
@@ -184,7 +189,8 @@ body {
   display: none;
 }
 
-input[type="text"], textarea {
+input[type="text"],
+textarea {
   width: 100%;
   padding: 8px;
   margin-top: 6px;
@@ -212,23 +218,32 @@ button[type="submit"]:hover {
 
 .home-button {
   display: inline-block;
-  width: 50px;  /* Diameter of the circle */
-  height: 50px; /* Diameter of the circle */
-  background-color: #386b4a; /* Green background */
-  color: white; /* White icon */
+  width: 50px;
+  /* Diameter of the circle */
+  height: 50px;
+  /* Diameter of the circle */
+  background-color: #386b4a;
+  /* Green background */
+  color: white;
+  /* White icon */
   text-align: center;
-  line-height: 50px; /* Center the icon vertically */
-  border-radius: 50%; /* Makes the button circular */
-  text-decoration: none; /* Removes underline from the link */
-  margin-left: 35px;
+  line-height: 50px;
+  /* Center the icon vertically */
+  border-radius: 50%;
+  /* Makes the button circular */
+  text-decoration: none;
+  /* Removes underline from the link */
+  margin-left: auto;
 }
 
 .home-button:hover {
-  background-color: #45a049; /* Slightly darker green on hover */
+  background-color: #45a049;
+  /* Slightly darker green on hover */
 }
 
 .fas {
-  pointer-events: none; /* Prevents the icon from interfering with the link */
+  pointer-events: none;
+  /* Prevents the icon from interfering with the link */
 }
 
 footer {
@@ -265,7 +280,7 @@ footer {
     /* Example: Hide the "About Me" section on mobile */
   }
 
-  
+
   #about-me.active {
     display: block;
     /* Show when active */
@@ -289,14 +304,16 @@ footer {
   }
 
   .blog-post-text {
-    width: 700px;
-    font-size: 16px;
+    max-width: 100%;
+    font-size: 15px;
   }
 
   .blog-post-text img {
-    width: 700px;
+    max-width: 100%;
   }
- #mc_embed_signup {
-    width: 350px;
- }
+
+  #mc_embed_signup {
+    max-width: 100%;
+    ;
+  }
 }
