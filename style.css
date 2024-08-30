@@ -286,8 +286,10 @@ footer {
     /* Show when active */
     position: fixed;
     /* Ensure it's in the correct position when shown */
+    z-index: 1000;
     right: 20px;
     top: 20px;
+
   }
 
   #about-toggle {
