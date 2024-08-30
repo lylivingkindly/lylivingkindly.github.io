@@ -2,7 +2,7 @@ body {
   font-family: "Poppins";
   margin: 30px;
   background-color: #e0f5e8;
-  color: #2f503b;
+  color: #233f2d;
 }
 
 #introduction p {
@@ -11,7 +11,6 @@ body {
 }
 
 #introduction h1 {
-  color: #233f2d;
   line-height: 40px;
   margin-right: 290px;
 }
@@ -62,15 +61,15 @@ body {
 
 .blog-post-text {
   font-family: inherit;
-  font-size: 16px;
   line-height: 1.8;
   margin: 0 auto;
   max-width: 600px;
 }
 
-.blog-post-text p {
+.fas p {
   margin-top: 30px;
   margin-bottom: 30px;
+  font-size: 16px;
 }
 
 .blog-post-text h1+p {
@@ -81,12 +80,13 @@ body {
   margin-top: 10px;
 }
 
-.blog-post-text img {
+.blog-post-text img.responsive {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 100%;
   border-radius: 5px;
   margin: 30px auto 20px;
   height: auto;
+  display: block;
 }
 
 .blog-post {
@@ -263,23 +263,19 @@ footer {
 
 
 @media only screen and (max-width: 700px) {
-  body {
-    font-size: 16px;
-  }
 
   #introduction p {
-    margin-right: 0;
+    margin-right: auto;
   }
 
   #introduction h1 {
-    margin-right: 0;
+    margin-right: auto;
   }
 
   #about-me {
     display: none;
     /* Example: Hide the "About Me" section on mobile */
   }
-
 
   #about-me.active {
     display: block;
@@ -289,7 +285,6 @@ footer {
     z-index: 1000;
     right: 20px;
     top: 20px;
-
   }
 
   #about-toggle {
@@ -300,18 +295,13 @@ footer {
     margin-top: 10px;
   }
 
-  #about-toggle.active #toggle-arrow {
-    transform: rotate(90deg);
-    /* Rotate arrow when expanded */
+  #blog-post-text p {
+    max-width: 100%;
+    font-size: 16px;
   }
 
-  .blog-post-text {
-    max-width: 100%;
-    font-size: 15px;
-  }
-
-  .blog-post-text img {
-    max-width: 100%;
+  #blog-post-text img {
+    max-width: auto;
   }
 
   #mc_embed_signup {
