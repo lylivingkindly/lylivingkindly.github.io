@@ -295,15 +295,6 @@ footer {
     margin-top: 10px;
   }
 
-  #blog-post-text p {
-    max-width: 100%;
-    font-size: 16px;
-  }
-
-  #blog-post-text img {
-    max-width: auto;
-  }
-
   #mc_embed_signup {
     max-width: 100%;
     ;
