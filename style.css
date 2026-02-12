@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins";
+  font-family: "Nunito";
   margin: 30px;
   background-color: #e0f5e8;
   color: #233f2d;
@@ -29,10 +29,11 @@ body {
 .blog-post {
   border: 1px solid #233f2d;
   padding: 10px 12px;
-  margin-bottom: 20px;
   width: 300px;
   border-radius: 5px;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .blog-post img {
